@@ -8,20 +8,14 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    background: #fff;
-    color: #3d464d;
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: 'Segoe UI', sans-serif;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow-y: scroll;
     text-align: left;
     direction: ltr
-}
-
-
-body {
-    background-color: #0d1117;
-    color: #e6edf3;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 .btn-custom {
