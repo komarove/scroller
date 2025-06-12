@@ -4,18 +4,22 @@
   "version": "1.0",
   "description": "Decorate your scrollbars.",
   "options_page": "options.html",
-  "permissions": ["scripting"],
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file://*/*"
+  ],
+  "background": {
+    "service_worker": "js/service-worker.js",
+    "type": "module"
+  },
   "action": {
     "default_title": "Custom Scrollbar",
-    "default_icon": "icons/icon16.png"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+    "default_icon": {
+      "48": "icons/icon48.png"
     }
-  ],
+  },
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
